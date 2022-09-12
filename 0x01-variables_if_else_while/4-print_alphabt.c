@@ -9,8 +9,9 @@ int main(void)
 {
 	char ag;
 
-	for (ag = 'a'; ag <= 'z' && ag != 'e' && ag != 'q'; ag++)
+	for (ag = 'a'; ag <= 'z'; ag++)
 	{
+		if (ag != 'e' && ag != 'q')
 		putchar(ag);
 	}
 	{
