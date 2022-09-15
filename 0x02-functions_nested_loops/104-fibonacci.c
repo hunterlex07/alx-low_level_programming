@@ -26,7 +26,7 @@ int main(void)
 	fibo1_half2 = fibo1 % 10000000000;
 	fibo2_half2 = fibo2 % 10000000000;
 
-	for (count = 93; count < 99; count ++)
+	for (count = 93; count < 99; count++)
 	{
 		half1 = fibo1_half1 + fibo2_half1;
 		half2 = fibo1_half2 + fibo2_half2;
