@@ -6,12 +6,12 @@
  */
 void print_rev(char *s)
 {
-	int j = 0, index;
+	int len = 0, index;
 
 	while (s[index++])
-		j++;
+		len++;
 
-	for (index = j - 1; index >= 0; index--)
+	for (index = len - 1; index >= 0; index--)
 		_putchar(s[index]);
 
 	_putchar('\n');
