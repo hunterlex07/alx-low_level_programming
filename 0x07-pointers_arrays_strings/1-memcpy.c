@@ -2,19 +2,20 @@
 
 /**
  * _memcpy - copies memory area.
- * @dest: a pointer to the destination memory area.
- * @src: the memory area to be copied.
- * @n: the number memory byted to be copied.
+ * @dest: a pointer to the detsination memory area.
+ * @src: the memory area that gets copied.
+ * @n: the number of bytes that gets copied
  *
- * Return: a pointer to @dest.
+ * Return: a pinter to destination @dest.
  */
-char *_memcpy(char *dest, char *src, unsigned int n);
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i;
+	unsigned int index;
+	char *destination = dest;
+	char *source = src;
 
-	for (i = 0; i < n; i++)
-	{
-		dest[i] = src[i];
-	}
+	for (index = 0; index < n; index++)
+		destination[index] = source[index];
+
 	return (dest);
 }
