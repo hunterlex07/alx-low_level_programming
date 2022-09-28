@@ -54,7 +54,7 @@ int is_palindrome(char *s)
 	int index = 0;
 	int len = find_strlen(s);
 
-	if (!(*s)
+	if (!(*s))
 		return (1);
-	return (check palindrome(s, len, index));
+	return (check_palindrome(s, len, index));
 }
